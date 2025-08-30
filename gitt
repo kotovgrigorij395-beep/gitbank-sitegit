@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>git bank — мультяшный онлайн‑банк</title>
+  <meta name="description" content="Git Bank — мультяшный онлайн‑банк: карты, переводы, вклады, аналитика. Русский язык." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #16a34a;
+      --green-500: #22c55e;
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --bg: #fbfbfb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Rubik", sans-serif;
+      background: var(--bg);
+      color: #111827;
+    }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 50; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+    .row { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .logo { display: flex; align-items: center; gap: 8px; font-weight: 900; font-size: 20px; }
+    .logo-mark { width: 36px; height: 36px; border-radius: 12px; background: var(--green); position: relative; }
+    .logo-mark::after { content: ""; position: absolute; right: -6px; bottom: -6px; width: 14px; height: 14px; border-radius: 999px; background: #000; border: 2px solid #fff; }
+    nav a { margin: 0 8px; font-weight: 500; color: #111827; text-decoration: none; }
+    nav a:hover { color: var(--green); }
+    .btn { padding: 10px 16px; border-radius: 12px; border: none; cursor: pointer; font-weight: 700; }
+    .btn-primary { background: var(--green); color: #fff; }
+    main { padding: 32px 0; }
+    section { padding: 40px 0; }
+    h1, h2, h3 { margin-top: 0; }
+    footer { border-top: 1px solid #e5e7eb; padding: 24px 0; font-size: 14px; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container row">
+      <div class="logo">
+        <div class="logo-mark"></div>
+        git <span style="color:var(--green)">bank</span>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О банке</a>
+        <a href="services.html">Услуги</a>
+        <a href="tariffs.html">Тарифы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Добро пожаловать в Git Bank</h1>
+      <p>Мультяшный онлайн‑банк для реальной жизни. Управляйте финансами легко и с улыбкой!</p>
+      <button class="btn btn-primary" onclick="location.href='services.html'">Наши услуги</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> git bank — Демо‑проект</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- about.html -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8" /><title>О банке — Git Bank</title></head>
+<body>
+  <h1>О банке</h1>
+  <p>Git Bank — это онлайн‑банк нового поколения. Мы объединяем удобство, безопасность и мультяшный стиль.</p>
+  <a href="index.html">На главную</a>
+</body>
+</html>
+
+<!-- services.html -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8" /><title>Услуги — Git Bank</title></head>
+<body>
+  <h1>Наши услуги</h1>
+  <ul>
+    <li>Карты и переводы</li>
+    <li>Накопительные счета</li>
+    <li>Аналитика расходов</li>
+  </ul>
+  <a href="index.html">На главную</a>
+</body>
+</html>
+
+<!-- tariffs.html -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8" /><title>Тарифы — Git Bank</title></head>
+<body>
+  <h1>Тарифы</h1>
+  <ul>
+    <li>Start — 0 ₽/мес</li>
+    <li>Pro — 199 ₽/мес</li>
+    <li>Business — 990 ₽/мес</li>
+  </ul>
+  <a href="index.html">На главную</a>
+</body>
+</html>
+
+<!-- contacts.html -->
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8" /><title>Контакты — Git Bank</title></head>
+<body>
+  <h1>Контакты</h1>
+  <p>Email: info@gitbank.ru</p>
+  <p>Телефон: +7 (900) 123‑45‑67</p>
+  <a href="index.html">На главную</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой сайт</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; text-align: center; }
+    h1 { color: green; }
+    button { padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <h1>Привет! Это мой сайт 🚀</h1>
+  <button onclick="alert('Добро пожаловать!')">Нажми</button>
+</body>
+</html>
